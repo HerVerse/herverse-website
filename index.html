@@ -3,154 +3,755 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HerVerse | Jewellery Made for Her</title>
-  <meta name="description" content="Discover stylish anti-tarnish jewellery made for everyday moments. Shop HerVerse jewellery across India.">
+
+  <title>HerVerse | For Every Version of You</title>
+
+  <meta name="description" content="HerVerse — anti-tarnish jewellery made for every version of you. Discover effortless everyday jewellery designed for her.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="announcement">✨ Anti-tarnish jewellery made for her · Shipping across India</div>
 
-  <header class="header">
-    <a class="logo" href="#home">Her<span>Verse</span></a>
-    <nav class="nav" id="nav">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-      <a href="#faq">FAQs</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="cart-button" onclick="toggleCart()" aria-label="Open shopping bag">
-      Bag <span id="cartCount">0</span>
-    </button>
-    <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">☰</button>
-  </header>
+  <!-- ANNOUNCEMENT -->
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">JEWELLERY MADE FOR HER</p>
-        <h1>Your everyday<br><em>shine.</em></h1>
-        <p class="hero-text">Minimal, versatile anti-tarnish jewellery designed to become a part of every version of you.</p>
-        <div class="hero-actions">
-          <a class="btn btn-dark" href="#shop">Shop the collection</a>
-          <a class="text-link" href="#about">Our story →</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="hero-card">
-          <span>H</span>
-          <small>HERVERSE</small>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip">
-      <div>✦ ANTI-TARNISH</div><div>✦ EVERYDAY WEAR</div><div>✦ MADE FOR HER</div><div>✦ SHIPPING ACROSS INDIA</div>
-    </section>
-
-    <section class="section" id="shop">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">SHOP</p>
-          <h2>Find your new favourite.</h2>
-        </div>
-        <div class="filters">
-          <button class="filter active" data-filter="All">All</button>
-          <button class="filter" data-filter="Earrings">Earrings</button>
-          <button class="filter" data-filter="Necklaces">Necklaces</button>
-          <button class="filter" data-filter="Rings">Rings</button>
-          <button class="filter" data-filter="Bracelets">Bracelets</button>
-        </div>
-      </div>
-      <div class="product-grid" id="productGrid"></div>
-    </section>
-
-    <section class="editorial">
-      <div class="editorial-image"><span>HER<br>VERSE</span></div>
-      <div class="editorial-copy">
-        <p class="eyebrow">THE HERVERSE EDIT</p>
-        <h2>Pieces that keep up with you.</h2>
-        <p>From coffee runs to dinner plans, your jewellery should feel effortless. HerVerse brings together easy-to-style pieces made for repeat wear and everyday expression.</p>
-        <a class="btn btn-outline" href="#shop">Explore jewellery</a>
-      </div>
-    </section>
-
-    <section class="benefits section">
-      <div class="section-heading centered"><p class="eyebrow">WHY HERVERSE</p><h2>Little details. Big difference.</h2></div>
-      <div class="benefit-grid">
-        <article><div class="benefit-icon">✦</div><h3>Anti-tarnish</h3><p>Designed to help your favourite pieces stay beautiful with proper care.</p></article>
-        <article><div class="benefit-icon">♡</div><h3>Everyday style</h3><p>Easy-to-wear designs you can mix, match and layer your way.</p></article>
-        <article><div class="benefit-icon">∞</div><h3>Made for more</h3><p>HerVerse starts with jewellery and grows with every side of her.</p></article>
-      </div>
-    </section>
-
-    <section class="quote-section">
-      <div class="quote-mark">“</div>
-      <blockquote>Jewellery isn't just an accessory.<br>It's a little reminder of who you are.</blockquote>
-      <p>— HERVERSE</p>
-    </section>
-
-    <section class="about section" id="about">
-      <div>
-        <p class="eyebrow">ABOUT HERVERSE</p>
-        <h2>For every version of her.</h2>
-      </div>
-      <div>
-        <p>HerVerse is an India-based lifestyle brand built around the idea that the things you wear should fit your life — not the other way around.</p>
-        <p>We’re starting with anti-tarnish jewellery: timeless enough for everyday wear, expressive enough to feel like you.</p>
-      </div>
-    </section>
-
-    <section class="faq section" id="faq">
-      <div class="section-heading centered"><p class="eyebrow">FAQS</p><h2>Good to know.</h2></div>
-      <div class="faq-list">
-        <details><summary>Is HerVerse jewellery anti-tarnish?</summary><p>Our pieces are designed with anti-tarnish properties. Actual longevity depends on wear and care, so please follow the care instructions supplied with your order.</p></details>
-        <details><summary>How should I care for my jewellery?</summary><p>Keep jewellery away from water, perfume, lotions and harsh chemicals. Store it dry in an airtight pouch or box and wipe gently after wearing.</p></details>
-        <details><summary>Do you ship across India?</summary><p>Yes. HerVerse is designed to serve customers across India. Delivery times and charges can vary by location.</p></details>
-        <details><summary>How can I place an order?</summary><p>Add your favourite pieces to the bag and use the WhatsApp order button. We’ll confirm availability, delivery details and payment with you.</p></details>
-      </div>
-    </section>
-
-    <section class="newsletter">
-      <p class="eyebrow">STAY IN THE LOOP</p>
-      <h2>New drops, styling ideas & more.</h2>
-      <p>Join the HerVerse list for updates.</p>
-      <form onsubmit="subscribe(event)">
-        <input id="email" type="email" placeholder="Your email address" required>
-        <button class="btn btn-dark" type="submit">Join</button>
-      </form>
-      <small id="subscribeMsg"></small>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <div class="footer-top">
-      <div><a class="logo" href="#home">Her<span>Verse</span></a><p>Jewellery made for her.</p></div>
-      <div><h4>Shop</h4><a href="#shop">All Jewellery</a><a href="#shop">New Arrivals</a><a href="#shop">Best Sellers</a></div>
-      <div><h4>Help</h4><a href="#faq">FAQs</a><a href="#">Shipping & Returns</a><a href="#">Care Guide</a></div>
-      <div><h4>Connect</h4><a id="instagramLink" href="#" target="_blank">Instagram</a><a id="whatsappLink" href="#" target="_blank">WhatsApp</a><a href="mailto:hello@theherverse.in">hello@theherverse.in</a></div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 HerVerse. All rights reserved.</span><span>Made in India ♡</span></div>
-  </footer>
-
-  <div class="cart-overlay" id="cartOverlay" onclick="closeCartIfOutside(event)">
-    <aside class="cart-drawer">
-      <div class="cart-head"><h3>Your Bag</h3><button onclick="toggleCart()">×</button></div>
-      <div id="cartItems"></div>
-      <div class="cart-foot">
-        <div class="subtotal"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
-        <button class="btn btn-dark full" onclick="orderOnWhatsApp()">Order via WhatsApp</button>
-        <p class="tiny">Payment and delivery details will be confirmed on WhatsApp.</p>
-      </div>
-    </aside>
+  <div class="announcement">
+    ✦ ANTI-TARNISH JEWELLERY · SHIPPING ACROSS INDIA · MADE FOR HER ✦
   </div>
 
+
+  <!-- HEADER -->
+
+  <header class="header">
+
+    <a class="logo" href="#home">
+      Her<span>Verse</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#shop">Shop</a>
+      <a href="#new-in">New In</a>
+      <a href="#moods">Collections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="cart-button" onclick="toggleCart()" aria-label="Open shopping bag">
+        Bag <span id="cartCount">0</span>
+      </button>
+
+      <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <main id="home">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1400&q=85"
+          alt="Woman wearing elegant jewellery"
+        >
+
+      </div>
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">WELCOME TO HERVERSE</p>
+
+        <h1>
+          For every<br>
+          version of <em>you.</em>
+        </h1>
+
+        <p class="hero-text">
+          Jewellery that moves with you — from everyday moments to everything in between.
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="btn btn-dark" href="#shop">
+            Shop Jewellery →
+          </a>
+
+          <a class="text-link" href="#moods">
+            Explore HerVerse
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BRAND STRIP -->
+
+    <section class="brand-strip">
+
+      <div>
+        MADE FOR EVERYDAY
+      </div>
+
+      <div>
+        DESIGNED FOR HER
+      </div>
+
+      <div>
+        MADE TO STAY
+      </div>
+
+      <div>
+        WEAR YOUR WAY
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro section">
+
+      <p class="eyebrow">THE HERVERSE WORLD</p>
+
+      <h2>
+        Jewellery for every<br>
+        version of her.
+      </h2>
+
+      <div class="intro-lines">
+
+        <span>The everyday her.</span>
+        <span>The dressed-up her.</span>
+        <span>The spontaneous her.</span>
+        <span>The quiet her.</span>
+        <span>The unstoppable her.</span>
+
+      </div>
+
+      <p class="intro-text">
+        HerVerse is made for all of it.
+      </p>
+
+    </section>
+
+
+    <!-- SHOP BY MOOD -->
+
+    <section class="moods section" id="moods">
+
+      <div class="section-heading centered">
+
+        <p class="eyebrow">YOUR MOOD. YOUR MOMENT.</p>
+
+        <h2>Find your everyday.</h2>
+
+      </div>
+
+
+      <div class="mood-grid">
+
+
+        <a href="#shop" class="mood-card">
+
+          <div class="mood-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85"
+              alt="Everyday jewellery"
+            >
+
+          </div>
+
+          <div class="mood-copy">
+
+            <h3>EVERYDAY</h3>
+
+            <p>Simple. Effortless. Always.</p>
+
+            <span>SHOP EVERYDAY →</span>
+
+          </div>
+
+        </a>
+
+
+        <a href="#shop" class="mood-card">
+
+          <div class="mood-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85"
+              alt="Statement jewellery"
+            >
+
+          </div>
+
+          <div class="mood-copy">
+
+            <h3>STATEMENT</h3>
+
+            <p>A little more, when you want it.</p>
+
+            <span>SHOP STATEMENT →</span>
+
+          </div>
+
+        </a>
+
+
+        <a href="#shop" class="mood-card">
+
+          <div class="mood-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=85"
+              alt="Layered jewellery"
+            >
+
+          </div>
+
+          <div class="mood-copy">
+
+            <h3>LAYERED</h3>
+
+            <p>More is more.</p>
+
+            <span>SHOP LAYERED →</span>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- THE HERVERSE EDIT -->
+
+    <section class="section products-section" id="shop">
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">THE HERVERSE EDIT</p>
+
+          <h2>Pieces you'll reach for again and again.</h2>
+
+        </div>
+
+
+        <div class="filters">
+
+          <button class="filter active" data-filter="All">All</button>
+
+          <button class="filter" data-filter="Earrings">
+            Earrings
+          </button>
+
+          <button class="filter" data-filter="Necklaces">
+            Necklaces
+          </button>
+
+          <button class="filter" data-filter="Rings">
+            Rings
+          </button>
+
+          <button class="filter" data-filter="Bracelets">
+            Bracelets
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="product-grid" id="productGrid"></div>
+
+
+      <div class="center-button">
+
+        <a class="btn btn-outline" href="#shop">
+          Shop All Jewellery →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- MADE TO STAY -->
+
+    <section class="made-to-stay">
+
+      <div class="made-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=85"
+          alt="Gold jewellery close-up"
+        >
+
+      </div>
+
+
+      <div class="made-copy">
+
+        <p class="eyebrow">MADE TO STAY</p>
+
+        <h2>
+          Your everyday jewellery,
+          made for everyday life.
+        </h2>
+
+        <p>
+          Designed for the way you actually live — easy to wear,
+          easy to style and made to stay beautiful for longer.
+        </p>
+
+
+        <div class="features">
+
+          <div>
+
+            <strong>ANTI-TARNISH</strong>
+
+            <span>
+              Made for longer-lasting shine.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong>EVERYDAY READY</strong>
+
+            <span>
+              Pieces designed to become part of your daily rotation.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <strong>EFFORTLESS STYLE</strong>
+
+            <span>
+              Easy to wear. Easy to layer. Easy to make your own.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <a class="btn btn-dark" href="#shop">
+          Shop Anti-Tarnish →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- EDITORIAL -->
+
+    <section class="editorial-large">
+
+      <img
+        src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=1800&q=90"
+        alt="HerVerse jewellery editorial"
+      >
+
+      <div class="editorial-overlay">
+
+        <p>YOUR STYLE. YOUR MOOD. YOUR VERSE.</p>
+
+        <h2>Wear it your way.</h2>
+
+        <a href="#shop">
+          Explore the Collection →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEW IN -->
+
+    <section class="section new-in" id="new-in">
+
+      <div class="section-heading centered">
+
+        <p class="eyebrow">JUST IN</p>
+
+        <h2>New pieces. New moods.</h2>
+
+        <p class="section-description">
+          Meet the latest additions to your jewellery rotation.
+        </p>
+
+      </div>
+
+
+      <div class="product-grid" id="newProductGrid">
+
+        <!-- New products can be added here later -->
+
+        <div class="new-placeholder">
+          <span>NEW</span>
+          <h3>Coming soon.</h3>
+          <p>
+            New HerVerse pieces are on their way.
+          </p>
+          <a href="#shop">
+            Explore the current collection →
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CUSTOMER LOVE -->
+
+    <section class="reviews section">
+
+      <div class="section-heading centered">
+
+        <p class="eyebrow">LOVED BY HER</p>
+
+        <h2>What she's saying.</h2>
+
+      </div>
+
+
+      <div class="review-grid">
+
+        <article class="review">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “So pretty and genuinely easy to wear every day.”
+          </p>
+
+          <span>— HerVerse customer</span>
+
+        </article>
+
+
+        <article class="review">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “The kind of jewellery you put on and never want to take off.”
+          </p>
+
+          <span>— HerVerse customer</span>
+
+        </article>
+
+
+        <article class="review">
+
+          <div class="stars">★★★★★</div>
+
+          <p>
+            “Minimal, elegant and goes with everything.”
+          </p>
+
+          <span>— HerVerse customer</span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- HERVERSE IRL -->
+
+    <section class="irl section">
+
+      <div class="section-heading centered">
+
+        <p class="eyebrow">HERVERSE IRL</p>
+
+        <h2>See how she wears it.</h2>
+
+      </div>
+
+
+      <div class="irl-grid">
+
+        <img
+          src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=85"
+          alt="HerVerse jewellery"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=700&q=85"
+          alt="Gold jewellery styling"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=700&q=85"
+          alt="Jewellery close-up"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=700&q=85"
+          alt="Jewellery styling"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=700&q=85"
+          alt="Jewellery detail"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=700&q=85"
+          alt="Fashion jewellery"
+        >
+
+      </div>
+
+
+      <div class="instagram-link">
+
+        <strong>@HERVERSE</strong>
+
+        <a href="#" id="instagramLink">
+          Follow us →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMMUNITY -->
+
+    <section class="newsletter">
+
+      <p class="eyebrow">STAY IN HERVERSE</p>
+
+      <h2>
+        New drops, styling inspiration
+        and everything we're loving.
+      </h2>
+
+      <p>
+        Join the HerVerse list for updates.
+      </p>
+
+
+      <form onsubmit="subscribe(event)">
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Your email address"
+          required
+        >
+
+        <button class="btn btn-dark" type="submit">
+          Join →
+        </button>
+
+      </form>
+
+      <small id="subscribeMsg"></small>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+
+    <section class="final-cta">
+
+      <p class="eyebrow">HERVERSE</p>
+
+      <h2>
+        There’s a version of you
+        for every moment.
+      </h2>
+
+      <h3>Wear her.</h3>
+
+      <a class="btn btn-dark" href="#shop">
+        Shop HerVerse →
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer id="contact">
+
+    <div class="footer-top">
+
+
+      <div class="footer-brand">
+
+        <a class="logo" href="#home">
+          Her<span>Verse</span>
+        </a>
+
+        <p>
+          For every version of you.
+        </p>
+
+        <p class="footer-made">
+          Made for her, in India.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Shop</h4>
+
+        <a href="#shop">All Jewellery</a>
+        <a href="#new-in">New In</a>
+        <a href="#shop">Best Sellers</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Help</h4>
+
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+
+      </div>
+
+
+      <div>
+
+        <h4>Follow</h4>
+
+        <a id="instagramFooterLink" href="#" target="_blank">
+          Instagram
+        </a>
+
+        <a id="whatsappLink" href="#" target="_blank">
+          WhatsApp
+        </a>
+
+        <a href="mailto:hello@theherverse.in">
+          hello@theherverse.in
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 HerVerse. All rights reserved.
+      </span>
+
+      <span>
+        For every version of you.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- CART -->
+
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+    onclick="closeCartIfOutside(event)"
+  >
+
+    <aside class="cart-drawer">
+
+      <div class="cart-head">
+
+        <h3>Your Bag</h3>
+
+        <button onclick="toggleCart()">×</button>
+
+      </div>
+
+
+      <div id="cartItems"></div>
+
+
+      <div class="cart-foot">
+
+        <div class="subtotal">
+
+          <span>Subtotal</span>
+
+          <strong id="cartTotal">₹0</strong>
+
+        </div>
+
+
+        <button
+          class="btn btn-dark full"
+          onclick="orderOnWhatsApp()"
+        >
+          Order via WhatsApp
+        </button>
+
+        <p class="tiny">
+          Payment and delivery details will be confirmed on WhatsApp.
+        </p>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+
   <div class="toast" id="toast"></div>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
